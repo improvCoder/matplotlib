@@ -16,8 +16,10 @@ print(variable_1)
 print(result)
 
 length=variable_1.size()
-
-err= math.sqrt(((r[0]-variable_2[0])**2/length[0])+((r[1]-variable_2[1])**2/length[0])+((r[2]-variable_2[2])**2/length[0]))
+n= length[0]
+err=0
+for a in range(0,n):
+    err= err+math.sqrt((r[a]-variable_2[a])**2/n)
 
 print("Err:",err)
 
